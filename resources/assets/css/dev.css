@@ -1,0 +1,104 @@
+/* appointment banner css */        
+.appointment-btn{
+  background: #6cabcc;
+  padding: 14px 14px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 800;
+  border-radius: unset;
+}
+.appointment-btn:hover {color: #235d7c;}
+.cta-sec {
+      background: url(../images/cta-bg.jpg) no-repeat center left !important;
+      background-size: cover !important;
+      padding: 80px 0 !important;
+  }
+
+/* form design css */
+.appointment-form {
+  background-color: #e2d9f0;
+  padding: 60px 60px;
+  /* max-width: 808px; */
+}
+.appointment-form h2 {
+  font-size: 27px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: .1em;
+  color: #2e2929;
+  font-weight: 600;
+}
+.appointment-form .default-btn {
+  width: 100%;
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
+.default-btn {
+  background-color: #e97136;
+  border-color: #fff1ed;
+  color: #ffffff;
+  padding: 16px 50px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.appointment-form input{
+  border-radius: 10px;
+  padding: 24px;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+.appointment-form textarea{          
+  border-radius: 10px;    
+  font-size: 16px;            
+}   
+.appointment-form .default-btn:hover {
+  background-color: #51219b;
+  color: #fff;
+}
+.appointment-form label{
+    font-weight: 500 !important;
+    font-family: 'Lato', sans-serif;
+}
+.appointment-btn{
+    background: #e97136;
+    padding: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+@media only screen and (max-width: 767px)  
+{
+  .appointment-form {      
+    padding: 20px;
+}
+  .navbar {
+    /* top: 24px; */
+  }
+  .appointment-btn {
+    font-size: 8px;
+    padding: 6px;
+}
+}
+@media (max-width: 767.98px)
+{
+  .cta-sec {
+    background: url(../images/cta-bg-xs.jpg) no-repeat center left !important;
+    background-size: cover !important;
+}
+}
+
+/* topbar css */
+.at-header-topbar{
+    background: radial-gradient(circle at top left,#4A42EC 0%,#521d91 100%);
+    background-color: #521d91;
+    /* padding: 5px 0; */
+}
+.at-header-topbar span i{
+    color: #fff;
+    padding-right: 0px;
+}
+.at-header-topbar span a{
+    color: #fff;
+}
+.appointment-btn:hover {color: #fff;}
