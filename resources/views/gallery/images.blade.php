@@ -68,6 +68,15 @@
                     
                     <br><br>
             </div>
+            <div class="col-lg-4 col-md-4 col-12 thumb">
+                <a href="#">
+                    <img src="{{ asset('/resources/assets/images/gallery-img6.jpg')}}" class="img-thumbnail" alt="Glimpse from a Talk on ‘Dementia and it’s prevention’ taken at M east ward on Alzheimer’s day"> 
+                </a>
+                <h2 class="pt-3">22-09-2024</h2>
+                <h2 class="pt-2">A session on various challenges faced by teenagers, including emotional regulation, relationship issues, peer pressure, drug abuse, cybercrime, teenage pregnancy, and mobile addiction, was successfully conducted at Podar International School, Cambridge University, Powai.</h2>
+                    
+                    <br><br>
+            </div>
         </div>
     </div>
 </section>     
