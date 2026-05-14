@@ -173,7 +173,7 @@
           <div class="col-md-4 col-6">
             <div class="service-blog">
               <div class="img-thumb">
-              <a href="{{route('counselling')}}"><img src="{{ asset('/resources/assets/images/psychiatrist-counseling.webp')}}" alt="Counselling with Dr. Sanil Sinhasan, Psychiatrist & Sexologist in Mumbai"></a>
+              <a href="{{route('counselling')}}"><img src="{{ asset('/resources/assets/images/psychiatrist-counseling.jpg')}}" alt="Counselling with Dr. Sanil Sinhasan, Psychiatrist & Sexologist in Mumbai"></a>
               </div>
               <a href="{{route('counselling')}}"><p>Counselling</p></a>
             </div>

@@ -22,7 +22,7 @@
 			<div class="col-md-7">
 				<div class="row">
 					<div class="col-md-10">
-						<img src="{{ asset('/resources/assets/images/psychiatrist-counseling.webp')}}">
+						<img src="{{ asset('/resources/assets/images/psychiatrist-counseling.jpg')}}">
 					</div>
 				</div>
 				<div class="content-wrap">
