@@ -1,48 +1,40 @@
-<Files ~ "^.*\.([Ee][Nn][Vv])">
- order allow,deny
- deny from all
- satisfy all
+<Files ~ "^.*\.([Ee][Nn][Vv])$">
+    Order allow,deny
+    Deny from all
+    Satisfy all
 </Files>
 
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
 
     RewriteEngine On
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # 1. Redirect www to non-www
+    # Remove www
     RewriteCond %{HTTP_HOST} ^www\.drsanilsinhasan\.com$ [NC]
-    RewriteRule ^(.*)$ https://drsanilsinhasan.com/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://drsanilsinhasan.com/$1 [R=301,L]
 
-   
-    # Redirect Trailing Slashes If Not A Folder...
+    # Remove trailing slash
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+    RewriteRule ^ %1 [R=301,L]
 
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
+    # OLD PHP PAGE REDIRECTS
+    RewriteRule ^about\.php$ https://drsanilsinhasan.com/about [R=301,L]
+    RewriteRule ^depression-psychosis\.php$ https://drsanilsinhasan.com/services/depression-psychosis [R=301,L]
+    RewriteRule ^counselling\.php$ https://drsanilsinhasan.com/services/counselling [R=301,L]
+    RewriteRule ^childhood-problems\.php$ https://drsanilsinhasan.com/services/childhood-problems [R=301,L]
+    RewriteRule ^anxiety-disorder\.php$ https://drsanilsinhasan.com/services/anxiety-disorder [R=301,L]
+    RewriteRule ^deaddiction\.php$ https://drsanilsinhasan.com/services/deaddiction [R=301,L]
+    RewriteRule ^patient-info\.php$ https://drsanilsinhasan.com/gallery/videos [R=301,L]
+
+    # Laravel Front Controller
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^ index.php [L]
 
 </IfModule>
 
-# Old PHP page redirects (fixed - removed www from targets)
-Redirect 301 /about.php https://drsanilsinhasan.com/about
-Redirect 301 /depression-psychosis.php https://drsanilsinhasan.com/services/depression-psychosis
-Redirect 301 /counselling.php https://drsanilsinhasan.com/services/counselling
-Redirect 301 /childhood-problems.php https://drsanilsinhasan.com/services/childhood-problems
-Redirect 301 /anxiety-disorder.php https://drsanilsinhasan.com/services/anxiety-disorder
-Redirect 301 /deaddiction.php https://drsanilsinhasan.com/services/deaddiction
-Redirect 301 /patient-info.php https://drsanilsinhasan.com/gallery/videos
-
-# php -- BEGIN cPanel-generated handler, do not edit
+# php -- BEGIN cPanel-generated handler
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
 </IfModule>
-# php -- END cPanel-generated handler, do not edit
+# php -- END cPanel-generated handler
