@@ -95,7 +95,7 @@
       </div>
       <div class="col-md-5 offset-md-1 ">
         <div class="abt-txt">
-          <h2 class="orange">Dr. Sanil Sinhasan</h2>
+          <h1 class="orange">Dr. Sanil Sinhasan</h1>
           <span class="f600 d-block">MBBS, MD Psychiatry,</span>
           <span class="f600 d-block">Consultant Psychiatrist & Sexologist</span>
           <p class="pb-2 pt-4">Dr. Sanil Sinhasan is a renowned Psychiatrist & Sexologist practicing in Mumbai. He has an experience of more than 10 years in the treatment of various mental & sexual health disorders. </p>
@@ -298,7 +298,8 @@ STEP TOWARDS LIVING A WHOLESOME LIFE.</h3>
       </div> 
     </div>
     <div class="text-center">
-      <a href="videos.php" class="btn-blue btn">Show More</a>
+      <a href="https://drsanilsinhasan.com/gallery/videos
+" class="btn-blue btn">Show More</a>
     </div>
   </div>
 </section>

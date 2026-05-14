@@ -5,7 +5,7 @@
         <div class="col-md-4">
           <div class="hsptl-a text-center">
           <img src="{{ asset('/resources/assets/images/logo-1.png')}}" alt="Logo for Dr. Sanil Sinhasan, Psychiatrist & Sexologist in Mumbai">
-          <h2>Mind Care clinic</h2><br>
+          <h3>Mind Care clinic</h3><br>
           <p>Bldg. No. 16, Ground Floor, Opp. Saibaba Mandir, Tilaknagar, Chembur West, Mumbai Maharashtra</p><br>
           <p class="pt-3 red"><b>Time: 11am to 1pm</b></p>
           </div>
@@ -13,7 +13,7 @@
         <div class="col-md-4">
           <div class="hsptl-a text-center">
             <img src="{{ asset('/resources/assets/images/logo-1.png')}}" alt="Logo for Dr. Sanil Sinhasan, Psychiatrist & Sexologist in Mumbai">
-            <h2>Rainbow Polyclinic</h2><br>
+            <h3>Rainbow Polyclinic</h3><br>
             <p>Above Sparsh Pharma, Opp Sahakar Cinema, Tilaknagar Signal Corner, Mumbai Maharashtra</p><br>
             <p class="pt-3 red"><b>Time: 8pm to 10pm</b></p>
           </div>
@@ -21,7 +21,7 @@
           <div class="col-md-4">
           <div class="hsptl-a text-center">
             <img src="{{ asset('/resources/assets/images/logo-1.png')}}" alt="Logo for Dr. Sanil Sinhasan, Psychiatrist & Sexologist in Mumbai">
-            <h2>Zenith Medical Centre (ZMC)</h2>
+            <h3>Zenith Medical Centre (ZMC)</h3>
             <p class="pt-3">A-402, Kohinoor Square
 N.C. Kelkar Marg, R.G. Gadkari Chowk, Shivaji Park, Dadar West, Mumbai 400028</p>
             <p class="pt-3 red"><b>Time: Mon, Wed & Fri (4pm to 6pm)</b></p>
