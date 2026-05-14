@@ -4,7 +4,8 @@
 <head>
     <title> {{ $title }} </title>
     <meta name="description" content="@yield('meta_desc')">
-    @include('includes.header')                            
+    @include('includes.header') 
+    <link rel="canonical" href="{{ url()->current() }}" />                           
 </head>    
 
 <body>
