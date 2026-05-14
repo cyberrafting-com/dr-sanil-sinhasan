@@ -1,12 +1,13 @@
-<Files ~ "^.\*\.([Ee][Nn][Vv])">
-order allow,deny
-deny from all
-satisfy all
+<Files ~ "^.*\.([Ee][Nn][Vv])">
+ order allow,deny
+ deny from all
+ satisfy all
 </Files>
+
 <IfModule mod_rewrite.c>
-<IfModule mod_negotiation.c>
-Options -MultiViews -Indexes
-</IfModule>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
 
     RewriteEngine On
 
@@ -14,7 +15,7 @@ Options -MultiViews -Indexes
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-      # Redirect www to non-www (HTTPS)
+    # Redirect www to non-www (HTTPS)
     RewriteCond %{HTTP_HOST} ^www\.drsanilsinhasan\.com$ [NC]
     RewriteRule ^(.*)$ https://drsanilsinhasan.com/$1 [L,R=301]
 
@@ -34,18 +35,16 @@ Options -MultiViews -Indexes
 
 </IfModule>
 
-Redirect 301 /about.php https://www.drsanilsinhasan.com/about  
-Redirect 301 /depression-psychosis.php https://www.drsanilsinhasan.com/services/depression-psychosis
-Redirect 301 /counselling.php https://www.drsanilsinhasan.com/services/counselling
-Redirect 301 /childhood-problems.php https://www.drsanilsinhasan.com/services/childhood-problems
-Redirect 301 /anxiety-disorder.php https://www.drsanilsinhasan.com/services/anxiety-disorder
-Redirect 301 /deaddiction.php https://www.drsanilsinhasan.com/services/deaddiction
-Redirect 301 /patient-info.php https://www.drsanilsinhasan.com/gallery/videos
+# FIXED: Changed all targets from www. to non-www
+Redirect 301 /about.php https://drsanilsinhasan.com/about
+Redirect 301 /depression-psychosis.php https://drsanilsinhasan.com/services/depression-psychosis
+Redirect 301 /counselling.php https://drsanilsinhasan.com/services/counselling
+Redirect 301 /childhood-problems.php https://drsanilsinhasan.com/services/childhood-problems
+Redirect 301 /anxiety-disorder.php https://drsanilsinhasan.com/services/anxiety-disorder
+Redirect 301 /deaddiction.php https://drsanilsinhasan.com/services/deaddiction
+Redirect 301 /patient-info.php https://drsanilsinhasan.com/gallery/videos
 
 # php -- BEGIN cPanel-generated handler, do not edit
-
-# Set the “ea-php74” package as the default “PHP” programming language.
-
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
 </IfModule>
