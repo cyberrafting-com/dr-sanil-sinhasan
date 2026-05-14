@@ -11,9 +11,7 @@
     RewriteCond %{HTTP_HOST} ^www\.drsanilsinhasan\.com$ [NC]
     RewriteRule ^(.*)$ https://drsanilsinhasan.com/$1 [L,R=301]
 
-    # Redirect /index.php to root
-    RewriteCond %{REQUEST_URI} ^/index\.php$
-    RewriteRule ^ https://drsanilsinhasan.com/ [L,R=301]
+   
 
     # Forward everything to public/ folder
     RewriteCond %{REQUEST_URI} !^/public/
