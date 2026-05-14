@@ -5,37 +5,23 @@
 </Files>
 
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
     RewriteEngine On
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # 1. Redirect www to non-www
+    # Redirect www to non-www
     RewriteCond %{HTTP_HOST} ^www\.drsanilsinhasan\.com$ [NC]
     RewriteRule ^(.*)$ https://drsanilsinhasan.com/$1 [L,R=301]
 
-    # 2. Redirect /index.php to root
+    # Redirect /index.php to root
     RewriteCond %{REQUEST_URI} ^/index\.php$
     RewriteRule ^ https://drsanilsinhasan.com/ [L,R=301]
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
-
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    # Forward everything to public/ folder
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L]
 
 </IfModule>
 
-# Old PHP page redirects (fixed - removed www from targets)
+# Old PHP page redirects
 Redirect 301 /about.php https://drsanilsinhasan.com/about
 Redirect 301 /depression-psychosis.php https://drsanilsinhasan.com/services/depression-psychosis
 Redirect 301 /counselling.php https://drsanilsinhasan.com/services/counselling
