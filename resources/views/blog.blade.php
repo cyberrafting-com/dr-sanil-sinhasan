@@ -28,7 +28,8 @@
 						<div class="blog-card-body">
 							<h3>What Are the Most Effective Treatments for Anxiety?</h3>
 						<p>Anxiety can disrupt sleep, work, relationships, and peace of mind, so finding trusted treatment in Mumbai is essential.</p>
-							{{-- <span class="blog-card-cta">Read full article</span> --}}
+						
+                        {{-- <span class="blog-card-cta">Read full article</span> --}}
 						</div>
 					</article>
 				</a>
