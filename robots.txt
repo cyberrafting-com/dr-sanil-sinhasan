@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap:https://drsanilsinhasan.com/sitemap.xml

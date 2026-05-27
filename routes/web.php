@@ -29,6 +29,14 @@ Route::get('/about', function () {
     return view('about');      
 })->name('about');
 
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('/blog/most-effective-treatments-for-anxiety', function () {
+    return view('blog.most-effective-treatments-for-anxiety');
+})->name('blog.most-effective-treatments-for-anxiety');
+
 // Route::get('/contact', function () {
 //     return view('contact');      
 // })->name('contact');

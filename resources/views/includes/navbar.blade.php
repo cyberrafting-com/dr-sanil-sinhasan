@@ -64,6 +64,9 @@
 	          <a class="dropdown-item" href="{{route('media')}}">Media</a>
 	          <a class="dropdown-item" href="{{route('images')}}">Images</a>
 	        </div>
+	      </li>
+		  <li class="nav-item">
+	        <a class="nav-link" href="{{route('blog')}}">Blog </a>
 	      </li>   
 	      <li class="nav-item">
 	        <a class="nav-link" href="{{route('contact')}}">Contact</a>

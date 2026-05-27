@@ -3,6 +3,111 @@
 
 @extends('layouts.default')      
 @section('content')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://drsanilsinhasan.com/#clinic",
+      "name": "Dr. Sanil Sinhasan",
+      "url": "https://drsanilsinhasan.com/",
+      "logo": "https://drsanilsinhasan.com/resources/assets/images/dr-sanil-sihmasan-logo-blue.png",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/doctor-2.png",
+      "telephone": "+91-9324730370",
+      "email": "info@drsanilsinhasan.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chembur East, Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "MH",
+        "postalCode": "400071",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.056",
+        "longitude": "72.912"
+      },
+      "openingHours": "Mo-Su 09:00-20:00",
+      "sameAs": [
+        "https://www.facebook.com/drsanilsinhasan",
+        "https://www.instagram.com/drsanilsinhasan"
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://drsanilsinhasan.com/#organization",
+      "name": "Dr. Sanil Sinhasan",
+      "url": "https://drsanilsinhasan.com/",
+      "logo": "https://drsanilsinhasan.com/resources/assets/images/dr-sanil-sihmasan-logo-blue.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9324730370",
+        "contactType": "Customer Service",
+        "areaServed": "IN",
+        "availableLanguage": ["English","Hindi","Marathi"]
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://drsanilsinhasan.com/#website",
+      "url": "https://drsanilsinhasan.com/",
+      "name": "Dr. Sanil Sinhasan",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://drsanilsinhasan.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://drsanilsinhasan.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://drsanilsinhasan.com/"
+        }
+      ]
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://drsanilsinhasan.com/#localbusiness",
+      "name": "Dr. Sanil Sinhasan",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/doctor-2.png",
+      "telephone": "+91-9324730370",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chembur East, Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "MH",
+        "postalCode": "400071",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "19.056",
+        "longitude": "72.912"
+      },
+      "openingHours": "Mo-Su 09:00-20:00",
+      "sameAs": [
+        "https://www.facebook.com/drsanilsinhasan",
+        "https://www.instagram.com/drsanilsinhasan"
+      ]
+    }
+
+  ]
+}
+</script>
+
+
 <!--Body content -->
 <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade d-lg-block d-md-block d-none" data-ride="carousel">
