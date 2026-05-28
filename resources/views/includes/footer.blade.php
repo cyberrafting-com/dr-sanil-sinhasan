@@ -98,4 +98,4 @@ N.C. Kelkar Marg, R.G. Gadkari Chowk, Shivaji Park, Dadar West, Mumbai 400028</p
   <script src="{{ asset('/resources/assets/js/jquery-3.6.0.min.js')}}"></script>
   <script src="{{ asset('/resources/assets/js/bootstrap.min.js')}}"></script>
   <script src="{{ asset('/resources/assets/js/owl.carousel.min.js')}}"></script>
-  <script src="{{ asset('/resources/assets/js/script.js')}}"></script>
+  <script src="{{ asset('/resources/assets/js/script.js') }}?v=1.5"></script>

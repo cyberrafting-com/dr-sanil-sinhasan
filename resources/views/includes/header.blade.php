@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ asset('/resources/assets/css/bootstrap-4.3.1.css')}}">
   <link rel="stylesheet" href="{{ asset('/resources/assets/css/owl.carousel.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('/resources/assets/css/style.css?v=1.0')}}">
+  <link rel="stylesheet" href="{{ asset('/resources/assets/css/style.css') }}?v=1.5">
   <link rel="stylesheet" href="{{ asset('/resources/assets/css/dev.css')}}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
