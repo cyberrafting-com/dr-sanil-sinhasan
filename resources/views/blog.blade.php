@@ -28,8 +28,21 @@
 						<div class="blog-card-body">
 							<h3>What Are the Most Effective Treatments for Anxiety?</h3>
 						<p>Anxiety can disrupt sleep, work, relationships, and peace of mind, so finding trusted treatment in Mumbai is essential.</p>
-						
-                        {{-- <span class="blog-card-cta">Read full article</span> --}}
+					
+						</div>
+					</article>
+				</a>
+			</div>
+
+			<div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+				<a href="{{ route('blog.sexual-dysfunction-treatment') }}" class="blog-card-link">
+					<article class="blog-card">
+						<div class="blog-card-media">
+							<img src="{{ asset('resources/assets/images/sexual-dysfunction-treatment.png') }}" alt="Sexual dysfunction treatment blog by Sexologist in Mumbai">
+						</div>
+						<div class="blog-card-body">
+							<h3>What Is Sexual Dysfunction?</h3>
+							<p>Learn about sexual dysfunction, its causes, and how the best Sexologist in Mumbai approaches treatment and care.</p>
 						</div>
 					</article>
 				</a>

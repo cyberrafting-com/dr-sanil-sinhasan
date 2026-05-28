@@ -1,68 +1,68 @@
 // For fixed Navigation
-$(window).scroll(function(){
+$(window).scroll(function () {
   if ($(this).scrollTop() > 40) {
     $('.navbar').addClass('fixed-top');
   }
- else {
-  $('.navbar').removeClass('fixed-top');
-	}
+  else {
+    $('.navbar').removeClass('fixed-top');
+  }
 });
 
 $('#sec-testimonial').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    smartSpeed: 1000,
-    autoplay: 5000,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:1
-        },
-        1200:{
-            items:1
-        }
+  loop: true,
+  margin: 10,
+  nav: true,
+  smartSpeed: 1000,
+  autoplay: 5000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    1200: {
+      items: 1
     }
+  }
 });
 
 $('#sec-service').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    smartSpeed: 1000,
-    autoplay: 5000,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:1
-        },
-        1200:{
-            items:3
-        }
+  loop: true,
+  margin: 10,
+  nav: true,
+  smartSpeed: 1000,
+  autoplay: 5000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    1200: {
+      items: 3
     }
+  }
 });
 
 
-$(function(){
+$(function () {
   var url = window.location;
-// Will only work if string in href matches with location
-$('.navbar1 .navbar-nav li a[href="'+ url +'"]').parent().removeClass('active');
+  // Will only work if string in href matches with location
+  $('.navbar1 .navbar-nav li a[href="' + url + '"]').parent().removeClass('active');
 
-// Will also work for relative and absolute hrefs
-$('.navbar1 .navbar-nav li a').filter(function() {
+  // Will also work for relative and absolute hrefs
+  $('.navbar1 .navbar-nav li a').filter(function () {
     return this.href == url;
-}).parent().addClass('active');
- // $(this).addClass('active');
+  }).parent().addClass('active');
+  // $(this).addClass('active');
 
 })
 
 
 // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
-$('.moreless-button').click(function() {
+$('.moreless-button').click(function () {
   $('.moretext').slideToggle();
   if ($('.moreless-button').text() == "Read more") {
     $(this).text("Read less")
@@ -108,3 +108,28 @@ counters.forEach((counter) => {
   updateCounter();
 });
 
+// blog faq
+document.addEventListener('DOMContentLoaded', function () {
+  const faqItems = document.querySelectorAll('.blog-faq .faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all items
+      faqItems.forEach(otherItem => {
+        otherItem.classList.remove('active');
+        otherItem.querySelector('.faq-answer').style.maxHeight = null;
+      });
+
+      // If clicked item was not active, open it
+      if (!isActive) {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+});

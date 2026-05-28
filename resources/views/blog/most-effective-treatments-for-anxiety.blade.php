@@ -4,6 +4,138 @@
 @extends('layouts.default')    
 @section('content')
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalWebPage",
+      "name": "Most Effective Treatments for Anxiety",
+      "description": "Learn about the most effective anxiety treatments in Mumbai, including therapy, medication, mindfulness, and lifestyle changes, guided by Dr. Sanil Sinhasan.",
+      "url": "https://drsanilsinhasan.com/blog/most-effective-treatments-for-anxiety",
+      "inLanguage": "en",
+      "about": {
+        "@type": "MedicalCondition",
+        "name": "Anxiety"
+      },
+      "mainEntity": {
+        "@type": "BlogPosting",
+        "headline": "Most Effective Treatments for Anxiety",
+        "author": {
+          "@type": "Person",
+          "name": "Dr. Sanil Sinhasan"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dr. Sanil Sinhasan",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://drsanilsinhasan.com/resources/assets/images/dr-sanil-sihmasan-logo-blue.png"
+          }
+        },
+        "datePublished": "2026-05-28",
+        "dateModified": "2026-05-28",
+        "image": "https://drsanilsinhasan.com/resources/assets/images/most-effective-treatments-for-anxiety.png",
+        "keywords": "Anxiety treatment Mumbai, Best psychiatrist Mumbai, CBT therapy, Anxiety medication, Mindfulness for anxiety",
+        "mainEntityOfPage": "https://drsanilsinhasan.com/blog/most-effective-treatments-for-anxiety"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How soon can I expect results from anxiety treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Therapy like CBT may show benefits in weeks, while medication often takes several weeks. Consistency matters more than speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can anxiety be treated without medication?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, therapy and lifestyle changes alone can help, especially in mild to moderate cases."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I choose the right anxiety treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Discuss your symptoms with a professional to tailor a plan, considering therapy, medication, or a combination."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Physician",
+      "name": "Dr. Sanil Sinhasan",
+      "medicalSpecialty": "Psychiatry",
+      "url": "https://drsanilsinhasan.com",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/dr-sanil-sihmasan-logo-blue.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Multiple locations across Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "telephone": "+91-9324730370"
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Mind Care Clinic",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/logo-1.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bldg. No. 16, Ground Floor, Opp. Saibaba Mandir, Tilaknagar, Chembur West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400089",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Su 11:00-13:00",
+      "telephone": "+91-9324730370"
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Rainbow Polyclinic",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/logo-1.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Above Sparsh Pharma, Opp Sahakar Cinema, Tilaknagar Signal Corner",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400089",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Su 20:00-22:00",
+      "telephone": "+91-9324730370"
+    },
+    {
+      "@type": "MedicalClinic",
+      "name": "Zenith Medical Centre (ZMC)",
+      "image": "https://drsanilsinhasan.com/resources/assets/images/logo-1.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "A-402, Kohinoor Square, N.C. Kelkar Marg, R.G. Gadkari Chowk, Shivaji Park, Dadar West",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400028",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo, We, Fr 16:00-18:00",
+      "telephone": "+91-9324730370"
+    }
+  ]
+}
+</script>
+
+
 <div class="page-banner">
 	<div class="container">
 		<div class="row">
@@ -80,12 +212,12 @@
 					<p>These steps create a foundation that makes formal anxiety treatment more effective.</p>
 				</div>
 
-				<div class="blog-section blog-highlight">
+				<div class="blog-section">
 					<h2>Support Systems and Group Help</h2>
 					<p>You don’t have to manage anxiety alone. Talking to friends and family can ease emotional load. Support groups offer shared experiences and useful coping tips. For many people, connecting with others who understand their struggles makes it easier to stick with treatment and feel understood.</p>
 				</div>
 
-				<div class="blog-section">
+				<div class="blog-section  blog-highlight">
 					<h2>Professional Guidance from Dr. Sanil Sinhasan</h2>
 					<p>When anxiety symptoms become overwhelming or persistent, reaching out to a qualified specialist can change your path. One well‑regarded option for anxiety care in the city is Dr. Sanil Sinhasan, recognised among the  <a href="{{ route('about') }}"> best Psychiatrist in Mumbai </a> for his work in clinical psychiatry and anxiety treatments.</p>
 					<p>Patients often report clearer understanding of their symptoms, personalised therapy plans, and tools like CBT paired with medication where needed. Dr. Sanil Sinhasan practices in multiple locations across Mumbai and offers in‑clinic and supportive counselling options for anxiety, stress, and related mental health conditions.</p>
@@ -94,25 +226,36 @@
 				<div class="blog-section blog-faq">
 					<h2>FAQs</h2>
 					<div class="faq-item">
-						<h3>1. How soon can I expect results from anxiety treatment?</h3>
-						<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Response time varies. Therapy like CBT may show benefits in weeks, while medication often takes several weeks to lift symptoms. Patience and consistent sessions matter more than speed.</p>
+						<h3 class="faq-question">1. How soon can I expect results from anxiety treatment? <span class="faq-icon"><i class="bi bi-chevron-down"></i></span></h3>
+						<div class="faq-answer">
+							<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Response time varies. Therapy like CBT may show benefits in weeks, while medication often takes several weeks to lift symptoms. Patience and consistent sessions matter more than speed.</p>
+						</div>
 					</div>
 					<div class="faq-item">
-						<h3>2. Can anxiety be treated without medication?</h3>
-						<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Yes, many people improve with therapy and lifestyle changes alone, especially in mild to moderate cases. A professional helps decide what works best for your situation.</p>
+						<h3 class="faq-question">2. Can anxiety be treated without medication? <span class="faq-icon"><i class="bi bi-chevron-down"></i></span></h3>
+						<div class="faq-answer">
+							<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Yes, many people improve with therapy and lifestyle changes alone, especially in mild to moderate cases. A professional helps decide what works best for your situation.</p>
+						</div>
 					</div>
 					<div class="faq-item">
-						<h3>3. What if therapy doesn’t seem to help?</h3>
-						<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>If progress stalls, revisit your plan with your therapist or psychiatrist. Sometimes combining therapy with medication or adjusting your approach improves outcomes.</p>
+						<h3 class="faq-question">3. What if therapy doesn’t seem to help? <span class="faq-icon"><i class="bi bi-chevron-down"></i></span></h3>
+						<div class="faq-answer">
+							<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>If progress stalls, revisit your plan with your therapist or psychiatrist. Sometimes combining therapy with medication or adjusting your approach improves outcomes.</p>
+						</div>
 					</div>
 					<div class="faq-item">
-						<h3>4. How do I choose the right anxiety treatment?</h3>
-						<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Start by noting your main challenges: worry, panic, sleep disruption, or social fears. Share these with a professional who can tailor your plan.</p>
+						<h3 class="faq-question">4. How do I choose the right anxiety treatment? <span class="faq-icon"><i class="bi bi-chevron-down"></i></span></h3>
+						<div class="faq-answer">
+							<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Start by noting your main challenges: worry, panic, sleep disruption, or social fears. Share these with a professional who can tailor your plan.</p>
+						</div>
 					</div>
 					<div class="faq-item">
-						<h3>5. Is professional anxiety treatment worth the time and cost?</h3>
-						<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Yes. Investing in evidence‑based treatment reduces long‑term distress and improves daily functioning and quality of life.</p>
+						<h3 class="faq-question">5. Is professional anxiety treatment worth the time and cost? <span class="faq-icon"><i class="bi bi-chevron-down"></i></span></h3>
+						<div class="faq-answer">
+							<p><i class="bi bi-arrow-right-circle-fill faq-dot"></i>Yes. Investing in evidence‑based treatment reduces long‑term distress and improves daily functioning and quality of life.</p>
+						</div>
 					</div>
+
 				</div>
 
 				<div class="blog-section blog-conclusion">
