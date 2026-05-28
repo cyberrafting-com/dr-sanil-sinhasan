@@ -171,7 +171,7 @@
 					<h2>What Is Sexual Dysfunction?</h2>
 				</div>
 				<div class="blog-article-media">
-					<img src="{{ asset('resources/assets/images/sexual-dysfunction-treatment.png') }}" alt="Sexual dysfunction treatment in Mumbai">
+					<img src="{{ asset('resources/assets/images/sexual-dysfunction-treatment-blog.png') }}" alt="Sexual dysfunction treatment in Mumbai">
 				</div>
                 
 				<p class="blog-intro">Have you ever wished you understood why intimacy feels difficult or different from what you once experienced? Many people silently struggle with challenges related to sexual health, and learning about sexual dysfunction can be the first step toward improvement. This topic matters because unresolved sexual concerns can affect confidence, relationships, and quality of life. We will define what sexual dysfunction is, explore causes, explain how professionals like the best Sexologist in Mumbai approach care, outline common treatment options including <a href="{{ route('sexual-disorders') }}">Sexual Disorder treatment in Mumbai</a>, and answer questions that many readers have.</p>

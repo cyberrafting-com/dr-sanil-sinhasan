@@ -20,7 +20,7 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-				<a href="{{ route('blog.most-effective-treatments-for-anxiety') }}" class="blog-card-link">
+				<a href="{{ route('blog.most-effective-treatments-for-anxiety-blog') }}" class="blog-card-link">
 					<article class="blog-card">
 						<div class="blog-card-media">
 							<img src="{{ asset('resources/assets/images/most-effective-treatments-for-anxiety.png') }}" alt="Anxiety treatment blog">
@@ -38,7 +38,7 @@
 				<a href="{{ route('blog.sexual-dysfunction-treatment') }}" class="blog-card-link">
 					<article class="blog-card">
 						<div class="blog-card-media">
-							<img src="{{ asset('resources/assets/images/sexual-dysfunction-treatment.png') }}" alt="Sexual dysfunction treatment blog by Sexologist in Mumbai">
+							<img src="{{ asset('resources/assets/images/sexual-dysfunction-treatment-blog.png') }}" alt="Sexual dysfunction treatment blog by Sexologist in Mumbai">
 						</div>
 						<div class="blog-card-body">
 							<h3>What Is Sexual Dysfunction?</h3>

@@ -157,7 +157,7 @@
 					<h2>What Are the Most Effective Treatments for Anxiety?</h2>
 							</div>
 				<div class="blog-article-media">
-					<img src="{{ asset('resources/assets/images/most-effective-treatments-for-anxiety.png') }}" alt="Anxiety treatment in Mumbai">
+					<img src="{{ asset('resources/assets/images/most-effective-treatments-for-anxiety-blog.png') }}" alt="Anxiety treatment in Mumbai">
 				</div>
                 
 				<p class="blog-intro">Anxiety can feel like an invisible barrier that holds you back from enjoying everyday life. When anxiety becomes frequent or intense, it affects your sleep, work, relationships, and overall peace of mind. Finding the right anxiety treatment is crucial, and many people in Mumbai are seeking trusted care pathways. This blog explains the most effective anxiety treatments, including therapy, medication, lifestyle changes, and how professional help can make a difference. You will learn which options work best and how to choose them wisely, especially if you are considering options like the best <a href="{{ route('home') }}">Psychiatrist in Mumbai</a> for support.</p>
